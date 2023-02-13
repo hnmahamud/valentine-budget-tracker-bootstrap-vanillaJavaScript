@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div>
+        <h1 class="text-center fw-bold text-danger">
+            Valentine Budget : <span>10000</span>
+        </h1>
+    </div>
+
+    <div class="shop-container d-flex justify-content-around">
+        <div>
+            <div class="rose p-2 box">
+                <img class="logo" src="./images/kitkat.png" alt="" />
+                <h6>KitKat Chocolate</h6>
+                <h5>Price: <span id="kitkat-price">200</span></h5>
+                <input id="kitkat-quantity" type="text" placeholder="type here Quantity" />
+                <br />
+                <button id="kitkat-buy-btn" class="buy-btn">
+                    Buy Now
+                </button>
+            </div>
+
+            <div class="rose p-3 box">
+                <img class="logo" src="./images/image-removebg-preview.png" alt="" />
+                <h6>Rose</h6>
+                <h5>Price: <span id="rose-price">100</span></h5>
+                <input id="rose-quantity" type="text" placeholder="type here Quantity" />
+                <button id="rose-buy-btn" class="buy-btn">Buy Now</button>
+            </div>
+
+            <div class="rose p-3 box">
+                <img class="logo" src="./images/diary.jpg" alt="" />
+                <h6>Diary</h6>
+                <h5>Price: <span id="diary-price">100</span></h5>
+                <input id="diary-quantity" type="text" placeholder="type here Quantity" />
+                <button id="diary-buy-btn" class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="money-tracker text-center">
+            <h4>Chocolate: <span id="chocolate">00</span></h4>
+            <hr />
+            <h4>Rose: <span id="rose">00</span></h4>
+            <hr />
+            <h4>Diary: <span id="diary">00</span></h4>
+            <hr />
+            <h3>Total: <span id="total">00</span></h3>
+
+            <div class="promo-code mt-3 text-center p-3">
+                <h5 class="bg-info mt-2">Use Promo Code for 10% Discount</h5>
+                <input id="promo-code" class="p-2 mt-2" type="text" placeholder="101" />
+                <button id="apply-promo" class="btn btn-primary" type="button">
+                    Apply
+                </button>
+            </div>
+            <h2 class="mt-5">ALL COST: <span id="all-total">00</span></h2>
+        </div>
+    </div>
+
+    <script src="js/utilities.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
